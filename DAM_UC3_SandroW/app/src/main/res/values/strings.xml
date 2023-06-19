@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">DAM_UC3_SandroW</string>
+    <string name="ing_correo">Correo electrónico</string>
+    <string name="ig_contraseña">Contraseña</string>
+    <string name="tx_igcorreo" />
+    <string name="btn_Entrar">Entrar</string>
+    <string name="check_NoCerra">No cerrar sesión</string>
+    <string name="olvidar_Contra">¿Has olvidado tu contraseña?</string>
+    <string name="tx_registrate">Regístrate</string>
+    <string name="tx_gratis">Es gratis (y lo seguirá siendo).</string>
+    <string name="tx_nombre">Nombre:</string>
+    <string name="ing_Nombre" />
+    <string name="tx_apellidos">Apellidos:</string>
+    <string name="ing_apellidos" />
+    <string name="tx_direccion1">Tu dirección de</string>
+    <string name="tx_direccion2">correo electrónico:</string>
+    <string name="tx_contraNueva">Contraseña</string>
+    <string name="tx_contraseñaN2">nueva:</string>
+    <string name="tx_sexo">Sexo:</string>
+    <string name="tx_fechaN1">Fecha de</string>
+    <string name="tx_fechaN2">nacimiento:</string>
+    <string name="tx_darinfo">¿Por qué tengo que dar esta información?</string>
+    <string name="btn_registrar">Regístrate</string>
+    <string name="tx_crea">Crea una página para un famoso, grupo de música o empresa</string>
+    <string name="tx_crear">Crea una página para un famoso, grupo de música o empresa</string>
+    <string name="opcion_sexoF">Mujer</string>
+    <string name="opcion_sexoM">Hombre</string>
+    <string name="opcion_dia">1</string>
+    <string name="opcion_mes">abril</string>
+    <string name="opcion_año">1960</string>
+</resources>

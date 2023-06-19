@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#E1DDDD"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/olvidarContra"
+        android:layout_width="408dp"
+        android:layout_height="124dp"
+        android:background="#0E36C5"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="3dp">
+
+        <TextView
+            android:id="@+id/correo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="280dp"
+            android:layout_marginBottom="80dp"
+            android:text="@string/ing_correo"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/contraseña"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="Contraseña"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/correo"
+            app:layout_constraintStart_toEndOf="@+id/correo"
+            app:layout_constraintTop_toTopOf="@+id/correo"
+            tools:text="@string/ig_contraseña" />
+
+        <EditText
+            android:id="@+id/tx_igcorreo"
+            android:layout_width="145dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/tx_igcorreo"
+            app:layout_constraintStart_toStartOf="@+id/correo"
+            app:layout_constraintTop_toBottomOf="@+id/correo" />
+
+        <EditText
+            android:id="@+id/igContraseña"
+            android:layout_width="122dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:inputType="textPassword"
+            app:layout_constraintStart_toStartOf="@+id/contraseña"
+            app:layout_constraintTop_toBottomOf="@+id/contraseña" />
+
+        <Button
+            android:id="@+id/btnEntrar"
+            android:layout_width="103dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="5dp"
+            android:backgroundTint="#2854F3"
+            android:text="@string/btn_Entrar"
+            app:layout_constraintBottom_toBottomOf="@+id/igContraseña"
+            app:layout_constraintStart_toEndOf="@+id/igContraseña"
+            app:layout_constraintTop_toTopOf="@+id/igContraseña" />
+
+        <CheckBox
+            android:id="@+id/checkNoCerra"
+            android:layout_width="150dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="5dp"
+            android:text="No cerrar sesión"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/tx_igcorreo"
+            app:layout_constraintStart_toStartOf="@+id/tx_igcorreo"
+            app:layout_constraintTop_toBottomOf="@+id/tx_igcorreo"
+            tools:text="@string/check_NoCerra" />
+
+        <TextView
+            android:id="@+id/olvidarContra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/olvidar_Contra"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/igContraseña"
+            app:layout_constraintTop_toBottomOf="@+id/igContraseña" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/registrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="250dp"
+        android:text="@string/tx_registrate"
+        android:textColor="#1A37A8"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/olvidarContra" />
+
+    <TextView
+        android:id="@+id/gratis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/tx_gratis"
+        android:textColor="#1A37A8"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/registrate"
+        app:layout_constraintTop_toBottomOf="@+id/registrate" />
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="80dp"
+        android:text="@string/tx_nombre"
+        android:textColor="#1A37A8"
+        app:layout_constraintEnd_toEndOf="@+id/gratis"
+        app:layout_constraintTop_toBottomOf="@+id/gratis" />
+
+    <EditText
+        android:id="@+id/ingNombre"
+        android:layout_width="186dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="60dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/ing_Nombre"
+        app:layout_constraintBottom_toBottomOf="@+id/nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nombre" />
+
+    <TextView
+        android:id="@+id/txapellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Apellidos:"
+        android:textColor="#1A37A8"
+        app:layout_constraintEnd_toEndOf="@+id/nombre"
+        app:layout_constraintTop_toBottomOf="@+id/nombre"
+        tools:text="@string/tx_apellidos" />
+
+    <EditText
+        android:id="@+id/ingapellidos"
+        android:layout_width="186dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="60dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/ing_apellidos"
+        app:layout_constraintBottom_toBottomOf="@+id/txapellidos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txapellidos" />
+
+    <TextView
+        android:id="@+id/direccion1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Tu dirección de"
+        android:textColor="#1A37A8"
+        app:layout_constraintEnd_toEndOf="@+id/txapellidos"
+        app:layout_constraintTop_toBottomOf="@+id/txapellidos"
+        tools:text="@string/tx_direccion1" />
+
+    <TextView
+        android:id="@+id/direccion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tx_direccion2"
+        android:textColor="#1A37A8"
+        app:layout_constraintEnd_toEndOf="@+id/direccion1"
+        app:layout_constraintTop_toBottomOf="@+id/direccion1" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="186dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="60dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="@+id/direccion2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/direccion1" />
+
+    <TextView
+        android:id="@+id/contraNueva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/tx_contraNueva"
+        android:textColor="#1A37A8"
+        app:layout_constraintEnd_toEndOf="@+id/direccion2"
+        app:layout_constraintTop_toBottomOf="@+id/direccion2" />
+
+    <TextView
+        android:id="@+id/contraseñaN2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tx_contraseñaN2"
+        android:textColor="#1A37A8"
+        app:layout_constraintEnd_toEndOf="@+id/contraNueva"
+        app:layout_constraintTop_toBottomOf="@+id/contraNueva" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword2"
+        android:layout_width="184dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="60dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/contraseñaN2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/contraNueva" />
+
+    <TextView
+        android:id="@+id/sexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/tx_sexo"
+        android:textColor="#1A37A8"
+        app:layout_constraintEnd_toEndOf="@+id/contraseñaN2"
+        app:layout_constraintTop_toBottomOf="@+id/contraseñaN2" />
+
+    <TextView
+        android:id="@+id/fechaN1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/tx_fechaN1"
+        android:textColor="#1A37A8"
+        app:layout_constraintEnd_toEndOf="@+id/sexo"
+        app:layout_constraintTop_toBottomOf="@+id/sexo" />
+
+    <TextView
+        android:id="@+id/fechaN2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tx_fechaN2"
+        android:textColor="#1A37A8"
+        app:layout_constraintEnd_toEndOf="@+id/fechaN1"
+        app:layout_constraintTop_toBottomOf="@+id/fechaN1" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="119dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sexo"
+        app:layout_constraintStart_toEndOf="@+id/sexo"
+        app:layout_constraintTop_toTopOf="@+id/sexo" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="72dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fechaN2"
+        app:layout_constraintStart_toEndOf="@+id/fechaN2"
+        app:layout_constraintTop_toTopOf="@+id/fechaN2" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="75dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner2"
+        app:layout_constraintStart_toEndOf="@+id/spinner2"
+        app:layout_constraintTop_toTopOf="@+id/spinner2" />
+
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="75dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner3"
+        app:layout_constraintStart_toEndOf="@+id/spinner3"
+        app:layout_constraintTop_toTopOf="@+id/spinner3" />
+
+    <TextView
+        android:id="@+id/darinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/tx_darinfo"
+        app:layout_constraintEnd_toEndOf="@+id/spinner4"
+        app:layout_constraintStart_toStartOf="@+id/fechaN2"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
+    <Button
+        android:id="@+id/btnregistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#8BC34A"
+        android:drawableLeft="@android:drawable/ic_media_play"
+        android:text="@string/btn_registrar"
+        app:layout_constraintEnd_toEndOf="@+id/darinfo"
+        app:layout_constraintStart_toStartOf="@+id/darinfo"
+        app:layout_constraintTop_toBottomOf="@+id/darinfo" />
+
+    <TextView
+        android:id="@+id/crear"
+        android:layout_width="350dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="@string/tx_crear"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnregistrar"
+        app:layout_constraintStart_toStartOf="@+id/btnregistrar"
+        app:layout_constraintTop_toBottomOf="@+id/btnregistrar" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="55dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ingNombre"
+        app:layout_constraintStart_toEndOf="@+id/ingNombre"
+        app:layout_constraintTop_toTopOf="@+id/ingNombre"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ingapellidos"
+        app:layout_constraintStart_toEndOf="@+id/ingapellidos"
+        app:layout_constraintTop_toBottomOf="@+id/ingNombre"
+        app:srcCompat="@android:drawable/ic_dialog_dialer" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextEmailAddress"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPassword2"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPassword2"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPassword2"
+        app:srcCompat="@android:drawable/ic_lock_idle_lock" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner4"
+        app:layout_constraintStart_toEndOf="@+id/spinner4"
+        app:layout_constraintTop_toTopOf="@+id/spinner4"
+        app:srcCompat="@android:drawable/ic_menu_month" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
